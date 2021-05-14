@@ -1,6 +1,5 @@
 import './App.css';
 import { useState } from 'react';
-import logo from './logo.svg';
 
 function App() {
   const [topText, setTopText] = useState('Your Text');
@@ -8,17 +7,17 @@ function App() {
   const [memeImg, setMemeImg] = useState('buzz');
   const [placeHolder, setPlaceHolder] = useState('');
 
-  let replTop = topText
+  const replTop = topText
     .replace(/\?/g, '~q')
     .replace(/#/g, '~h')
     .replace(/\//g, '~s');
 
-  let replBot = bottomText
+  const replBot = bottomText
     .replace(/\?/g, '~q')
     .replace(/#/g, '~h')
     .replace(/\//g, '~s');
 
-  let src1 = `https://api.memegen.link/images/${memeImg}/${replTop}/${replBot}.png`;
+  const src1 = `https://api.memegen.link/images/${memeImg}/${replTop}/${replBot}.png`;
 
   return (
     <div className="App">
