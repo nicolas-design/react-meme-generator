@@ -2,6 +2,56 @@
   text-align: center;
 }
 
+body {
+  height: 100%;
+  background: rgb(70, 184, 167);
+  background: radial-gradient(
+    circle,
+    rgba(70, 184, 167, 1) 0%,
+    rgba(55, 80, 219, 1) 100%
+  );
+}
+button {
+  background-color: #44c767;
+  border-radius: 25px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 15px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin: 10px;
+}
+button:hover {
+  background-color: #5cbf2a;
+}
+
+.selectWrapper {
+  border-radius: 36px;
+  display: inline-block;
+  overflow: hidden;
+  background: #cccccc;
+  border: 2px solid;
+}
+.selectBox {
+  width: 200px;
+  height: 40px;
+  border: 0px;
+  outline: none;
+}
+
+input {
+  border-radius: 25px;
+  border: 2px solid;
+  padding: 15px;
+  width: 200px;
+  height: 10px;
+  margin: 10px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +76,11 @@
 
 .App-link {
   color: #61dafb;
+}
+img {
+  max-width: 45%;
+  height: auto;
+  border: 5px solid;
 }
 
 @keyframes App-logo-spin {
